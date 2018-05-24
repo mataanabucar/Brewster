@@ -1,0 +1,146 @@
+﻿@{
+    int brewId = (int)Session["BreweryId"];
+    // int brewId = 1;
+}
+
+
+<head>
+    <link href="~/Content/BeermanagerCss.css" rel="stylesheet" />
+</head>
+<style>
+    .bord {
+        border-radius: 3px;
+        margin:0px 5px;
+    }
+    #hide {
+        color:rgb(61, 61, 61);
+        font-size:10pt;
+    }
+    #show {
+        color: rgb(30, 181, 114);
+        font-size: 10pt;
+    }
+    span.lever {
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+        background-color: #84c7c1;
+    }
+
+    .switch label .lever:after {
+        background-color: red;
+    }
+    .switch label input[type=checkbox]:checked + .lever:after {
+        background-color: #7DE688;
+    }
+    .btnwidth{
+        width:100px !important;
+    }
+    body .btn#edit {
+        font-family: 'Raleway' !important;
+        font-weight: 400 !important;
+        font-size: 10pt;
+    }
+</style>
+
+<div class="jumbotron w-50 p-2 mx-auto mt-5 jumbo mobile" style="background-color: #eceeef">
+    <h1 class="mt-1" style="color: black; text-align: center">Beer Manager</h1>
+
+
+
+    <div style="text-align: center">
+        <a href="AddBeer" class="waves-effect waves-light my-1 btn" style="width:150px"><i class="material-icons left fas fa-beer" style="color: lawngreen;"></i>Add Beer</a>
+    </div>
+
+        <div id="beerSH" class="row justify-content-center p-1 mt-3">
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+    $(document).ready(function () {
+        $('.sidenav').sidenav();
+    });
+
+
+    $.ajax({
+        url: "/Home/GetBeersForManaging?brewID=" + @brewId,
+        method: "GET",
+        dataType: "json"
+    }).done(function (beers) {
+        //console.log(beers)
+        for (var i = 0; i < beers.length; i++) {
+            var beer =
+                `<div id="beer${i}" class="center my-2 p-2 z-depth-3 bord"><strong>${beers[i].Name}</strong>` +
+                `<div id="bswitch" class="switch"><label><span id="hide">Hide</span><input id="beercheck${i}" ` +
+                `type="checkbox"><span class="lever"></span><span id="show">Show</span></label></div>` +
+                `<div> <form method="post" action="/Home/UpdateBeer"><button class="btn btnwidth mt-2" id="edit" type="submit" value=${beers[i].BeerID} name="BeerID">Edit Beer</button></form></div> <div class="deletebeers"><button value="${beers[i].BeerID}" class="btnwidth btn-small mt-3 red waves-effect waves-yellow">Delete</button></div></div>`
+            $("#beerSH").append(beer)
+            $(`#beercheck${i}`).data('beerID',beers[i].BeerID)
+            if (beers[i].ShowHide==1) {
+                $(`#beercheck${i}`).prop("checked", true)
+            }
+        }
+    })
+
+    $(function () {
+        $("div.deletebeers button").click(function () {
+            var beerid = $(this).val();
+            console.log(beerid)
+            $.ajax({
+                url: `/Home/DeleteBeer?beerId=${beerid}`,
+                method: "post",
+                dataType: "json",
+                success: function (data) {
+                    window.location.href = "/Home/ManageBeers";
+                }
+            })
+        })
+
+    })
+
+
+
+
+    $(function () {
+
+    $("#bswitch label input").click(function () {
+        var noHashId = $(this).prop('id')
+        var id = `#${noHashId}`
+        var beerid = $(this).data('beerID')
+        //console.log(beerid)
+
+        if ($(this).prop("checked")) {
+
+            $.ajax({
+            url: `/Home/ShowHideBeer?beerID=${beerid}&showHide=${1}` ,
+            method: "post",
+            dataType: "json"
+            })
+
+        }
+        if (!$(this).prop("checked")) {
+            $.ajax({
+                url: `/Home/ShowHideBeer?beerID=${beerid}&showHide=${0}`,
+                method: "post",
+                dataType: "json"
+            })
+        }
+    })
+    })
+
+</script>

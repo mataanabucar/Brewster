@@ -1,0 +1,93 @@
+﻿
+@model Capstone.Web.Models.ViewModels.RegisterViewModel
+
+
+
+<style>
+    /*.insert {
+        width: 100%;
+    }*/
+
+    /*.jumbotron {
+        --background: rgb(200, 54, 54);
+        --background-color: rgba(200, 54, 54, 0.5) !important;
+        background-color: rgba(0, 0, 0, 0.66) !important;
+    }*/
+
+    /*.text, #userName, #passWord, #eMail {
+        color: white;
+    }*/
+
+    /*.button {
+        background-color: black;
+    }*/
+
+    /*.text-area {
+        background-color: white;
+    }*/
+
+    .field-validation-error {
+        color: red;
+        font-size: 10pt;
+    }
+</style>
+
+
+<div class="col-10 col-lg-5 col-sm-10 jumbotron mt-5 mx-auto pt-3">
+    <h3 class="text-center">Registration</h3>
+
+    @using (Html.BeginForm("UserRegistration", "Home", FormMethod.Post))
+    {@Html.ValidationMessage("username-exists")
+
+
+    <div class="input-field col">
+        @Html.TextBoxFor(m => m.UserName, new { id = "userAdd", @class = "validate" })
+        <label class="ml-2" for="userAdd">Username</label>
+        @Html.ValidationMessageFor(m => m.UserName, null, new { id = "usernameValidate" })
+    </div>
+
+
+    <div class="input-field col">
+        @Html.TextBoxFor(m => m.EmailAddress, new { id = "emailAdd", type = "email", @class = "validate" })
+        <label class="ml-2" for="emailAdd">Email</label>
+        @Html.ValidationMessageFor(m => m.EmailAddress, null, new { id = "emailValidate" })
+    </div>
+
+
+    <div class="input-field col">
+        @Html.PasswordFor(m => m.Password, new { id = "passWord", type = "password", @class = "validate" })
+        <label class="ml-2" for="passWord">Password</label>
+        <div style="max-width:450px">
+            @Html.ValidationMessageFor(m => m.Password, null, new { id = "pWordValidate" })
+        </div>
+    </div>
+
+
+    <button type="submit" class="btn btn-primary btn-lg btn-block mt-5 teal accent-1 teal-text z-depth-3">Register</button>
+
+}
+</div>
+
+
+<script>
+    $("#userAdd").keydown(function (event) {
+        if ($("#userAdd").val().length > 0) {
+            $("#usernameValidate").hide()
+        }
+    })
+
+
+    $("#emailAdd").keydown(function (event) {
+        if ($("#emailAdd").val().length > 0) {
+            $("#emailValidate").hide()
+        }
+    })
+
+
+
+    $("#passWord").keydown(function (event) {
+        if ($("#passWord").val().length > 0) {
+            $("#pWordValidate").hide()
+        }
+    })
+</script>

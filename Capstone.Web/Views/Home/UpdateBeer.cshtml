@@ -1,0 +1,67 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    string pic = $"{Model.Name}.jpg";
+}
+
+<head>
+    <link href="~/Content/MobileCss.css" rel="stylesheet" />
+</head>
+@using Capstone.Web.Models
+@model Beer
+
+<div class="jumbotron center w-75 mx-auto mt-5 pt-2">
+    <h3 class="my-4" style="text-align:center">Update @Model.Name</h3>
+
+    <div class="row">
+
+        <div class="col-5">
+            <img src="/Photos/Beers/@pic" class="z-depth-3 center" style="width:inherit; height:auto;" />
+        </div>
+        <div class="p-4" style="background-color: #fbfbfb; width:57%">
+            @using (Html.BeginForm("SubmitBeerEdit", "Home", FormMethod.Post, new { id = "beerPhotoSubmit", enctype = "multipart/form-data" }))
+        {
+
+            <div class="pr-4">
+                <div class="file-field input-field">
+                    <div class="btn">
+                        <span>File</span>
+                        <input type="file" name="photo">
+                    </div>
+                    <div class="file-path-wrapper">
+                        <input class="file-path validate" placeholder="Upload Beer Image Here" type="text">
+                        <input hidden name="beerID" value="@Model.BeerID" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-field col">
+                @Html.TextBoxFor(m => m.Name, new { id = "BeerName", type = "text", @class = "validate" })
+                <label for="BeerName">Beer Name</label>
+            </div>
+
+            <div class="input-field col">
+                @Html.TextAreaFor(m => m.Description, new { id = "Description", type = "text", @class = "validate materialize-textarea" })
+                <label for="Description">Description</label>
+            </div>
+
+            <div class="input-field col">
+                @Html.TextBoxFor(m => m.AlcoholByVolume, new { id = "AlcoholByVolume", type = "text", @class = "validate" })
+                <label for="AlcoholByVolume">ABV</label>
+            </div>
+
+            <div class="input-field col">
+                @Html.TextBoxFor(m => m.BeerType, new { id = "BeerType", type = "text", @class = "validate" })
+                <label for="BeerType">Beer Type</label>
+            </div>
+
+            <input hidden name="beerID" value="@Model.BeerID" />
+
+
+
+
+            <button class="btn mt-5 teal accent-1 teal-text z-depth-1" id="update-button">Submit Changes</button>
+    }
+        </div>
+    </div>
+</div>
+

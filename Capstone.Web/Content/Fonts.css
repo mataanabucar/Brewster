@@ -1,0 +1,27 @@
+﻿
+/*  
+    Alegreya Sans
+      Roboto
+      Lato Hairline
+      Exo
+      Josefin Sans
+      Varela Round
+      Raleway
+
+*/
+
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway' !important;
+    font-weight: 200 !important;
+}
+body {
+    font-family: 'Alegreya Sans' !important;
+    font-weight: 600 !important;
+}
+    body .btn {
+        font-family: 'Raleway' !important;
+        font-weight: 400 !important;
+        font-size: 12pt;
+    }

@@ -1,0 +1,107 @@
+﻿@using Capstone.Web.Models;
+@model List<Beer>
+
+
+<style>
+    .oflow {
+        overflow:auto;
+        height:100px;
+
+    }
+    .round{
+        border-radius:2px;
+        --margin:0px 15px;
+    }
+
+    a.beerhead, a.beerhead h5#brewname {
+        text-decoration: none !important;
+        font-weight: 300;
+        color: black;
+        -webkit-font-smoothing: antialiased;
+        transition: 0.5s ease-in-out;
+    }
+
+
+    a.beerhead:hover, a.beerhead:hover h5#brewname {
+        -webkit-font-smoothing: antialiased;
+        font-weight: 500 !important;
+        text-shadow: 0px 14px 18px black;
+        font-size: 20pt !important;
+    }
+
+    .lab{
+        font-size:14pt;
+        font-weight:500;
+    }
+    .info {
+        font-size: 12pt;
+        font-weight: 300;
+    }
+
+
+
+</style>
+
+
+<div id="main" class="jumbotron w-75 mx-auto px-0 py-0">
+    @*<h2 id="breweryTitle" class="center pt-4" style="font-size: 2.56rem;">Beer Selection</h2>*@
+
+    <div class="row">
+
+        @foreach (Beer b in Model)
+        {
+
+            if (b.ShowHide == 1)
+            {
+
+                <div class="z-depth-1 round pt-1 px-3 pb-3 mx-auto my-3" style="width: min-content;">
+                    <div class="round">
+
+                        <div style="width: min-content;">
+                            <a class="beerhead" href=@Url.Action("BeerDetail", "Home", new { beerID = b.BeerID }, null)>
+                                <div style="height:60px;">
+                                    <h5 id="brewname" class="center beerhead">@b.Name</h5>
+                                </div>                    <img class="z-depth-1" src="~/Photos/Beers/@(b.Name).jpg" style="width:200px; height:auto; border-radius:1px" />
+                            </a>
+
+                            <div class="row mb-0 mt-1">
+                                <div class="pt-2 mr-3" style="line-height: 1.2;"><span class="lab">Style</span><div class="info">@b.BeerType</div></div>
+                                <div class="pt-2" style="line-height: 1.2;"><span class="lab">Style</span><div class="info">@b.AlcoholByVolume</div></div>
+                            </div>
+                            <div class="mt-1" style="width: 100% !important;">
+                                <div style="font-size: 9pt;"> @b.Description</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+            }
+        }
+
+    </div>
+
+</div>
+
+<script>
+    $(function () {
+
+        let brewID = @Model[0].BreweryId;
+        console.log(brewID)
+
+        $.ajax({
+            url: `/Home/GetCurrentBrewry?brewID=${brewID}`,
+            method: "GET",
+            dataType: "json"
+        }).done(function (brewery) {
+            console.log(brewery)
+            $("div#main").prepend(`<h2 id="breweryTitle" class="center pt-4 mb-0" style="font-size: 2.56rem;">On Tap Now <b>${brewery.BreweryName}</b></h2>`)
+           /// $("#breweryTitle").text(`On Tap Now: <b>${brewery.BreweryName}</b>`)
+
+
+        })
+    })
+</script>

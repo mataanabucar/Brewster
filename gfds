@@ -1,0 +1,1917 @@
+[33mcommit 03a7dfa0b3a36669315fbcc72fd33fb2d029ce8c[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Sat May 12 01:36:38 2018 -0400
+
+    ready for deploy appHB
+
+[33mcommit 42f3d424ad3bd37b9ae7210d99c00e0096fc2e62[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Fri May 4 18:41:53 2018 -0400
+
+    fbhjkfds
+
+[33mcommit 3335df2eb029d42cac19d21fc1ad746fbf58402a[m
+Merge: 00c72e7 c07f4b6
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Fri May 4 01:06:38 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit 00c72e7f6f6c5c43b3d7e17fa04dcb4278e96ceb[m
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Fri May 4 01:06:21 2018 -0400
+
+    fbhjkfds
+
+[33mcommit c07f4b6b9a7b1119d36498430e82ba84aeaaa820[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Thu May 3 22:08:05 2018 -0400
+
+    Got beer manager and edit brewery functions to hide for non brewers
+
+[33mcommit 95920d4be38fda3b366a3810d954b49423d82cb4[m
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Thu May 3 21:22:10 2018 -0400
+
+    working
+
+[33mcommit 53097629c06a1662b703a188d87a065f9aff058f[m
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Thu May 3 16:15:08 2018 -0400
+
+    .
+
+[33mcommit 48a188750418a9823a955386fb93687430b2c608[m
+Merge: f680c80 be022ec
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Thu May 3 16:08:16 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit f680c8090588cac1767a4a5c461329e82e9b0c9b[m
+Merge: 5c67de0 db20573
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Thu May 3 16:08:09 2018 -0400
+
+    detailpage looks good
+
+[33mcommit be022ecf9493f4c64cd157b802a1a03883eb6238[m
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Thu May 3 16:03:02 2018 -0400
+
+    edit beer
+
+[33mcommit b64b4732b0175c5f547843f3b78c23f67e57714f[m
+Merge: bdc9a87 57c1d98
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Thu May 3 15:28:09 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit bdc9a87579fe6aec675582abd63143e823b2f25f[m
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Thu May 3 15:28:01 2018 -0400
+
+    .
+
+[33mcommit 57c1d98f01db126987cbad4d08bed78a87e646a2[m
+Merge: db3ce01 db20573
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Thu May 3 15:14:49 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit db3ce01a40a44bc11a64159ce5f5b74c3d8fc052[m
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Thu May 3 15:14:42 2018 -0400
+
+    Redirect Add Beer
+
+[33mcommit 5c67de09ceb14a2096602299a4536d90252090b6[m
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Thu May 3 15:13:34 2018 -0400
+
+    brewdetailpage
+
+[33mcommit db205739f81a911f559ae68dd8864ca4ad571652[m
+Merge: b0b399d ec10a7b
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Thu May 3 15:12:43 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit b0b399d78ed53d25a4f2599f36d1640c828a4686[m
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Thu May 3 15:12:35 2018 -0400
+
+    lots of stuff
+
+[33mcommit ec10a7b3e4d1f7da4afe239dc7377bfdd5201dbb[m
+Merge: d480879 09f544e
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Thu May 3 14:46:37 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit d48087950d1b9eb51a7e0c529f9d1b631a22fd92[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Thu May 3 14:46:31 2018 -0400
+
+    Got navbar button hide/show working
+
+[33mcommit 09f544e3640ca2e83a691bc8d5f5206c6ec77231[m
+Merge: f5ef349 0fc43ed
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Thu May 3 14:35:09 2018 -0400
+
+    cool
+
+[33mcommit f5ef3490127ec8bb2cc04f4f3955f7fa4f54bfb6[m
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Thu May 3 14:33:02 2018 -0400
+
+    updated addbreweryview
+
+[33mcommit 0fc43ed9689c82e795dbd83b5aaf9e189ecb6ddb[m
+Merge: 2af3be6 d18855c
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Thu May 3 14:07:37 2018 -0400
+
+    Commit
+
+[33mcommit 97eb298fe2c7632047743342e0cb9eb0c406ca94[m
+Merge: f69c151 d18855c
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Thu May 3 14:07:11 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit f69c1517e3a8d9c1c11de50c6ff9357ea63e019f[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Thu May 3 14:07:01 2018 -0400
+
+    Trying to get navbar buttons to hide depending on session state
+
+[33mcommit 2af3be6dbf8d5ffc90e0c4f27d67dd420f0fbf63[m
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Thu May 3 14:05:58 2018 -0400
+
+    Commit
+
+[33mcommit d18855c7ed593a636aea18ae9ea74937d85216a4[m
+Merge: 40f096d dfd0b8c
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Thu May 3 14:04:35 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit 40f096de7accb466bff7645c94cf90dc132c8b9d[m
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Thu May 3 14:04:26 2018 -0400
+
+    landing page done
+
+[33mcommit dfd0b8cede7c4b0aba7718d0d641c5bdcb584c2f[m
+Merge: 4d27da9 92ed700
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Thu May 3 13:01:11 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit 4d27da97ebe0da0c1d146d9dfae5a4a31124628e[m
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Thu May 3 13:01:02 2018 -0400
+
+    Text on add brewery
+
+[33mcommit 92ed700967d96ff1debdd96fce332e05385e7d61[m
+Merge: df459b9 cdef3bb
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Thu May 3 11:48:22 2018 -0400
+
+    c vzxv
+
+[33mcommit df459b9c60c1a0dd7da60334bbadfee862858f1e[m
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Thu May 3 11:28:12 2018 -0400
+
+    delete beers fixed, manage beers prettier, add beers prettier
+
+[33mcommit cdef3bbe5393e3a22a1584f91e07c0e5cea23103[m
+Merge: a889f65 fa22c0f
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Thu May 3 11:11:38 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit a889f650baf3f610f1732867005f87f3e362c623[m
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Thu May 3 11:11:30 2018 -0400
+
+    Text color black add beer
+
+[33mcommit fa22c0fb24f03141422147f85c3cecb4241fa803[m
+Merge: 2735282 0d0de9e
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Thu May 3 11:05:31 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit 2735282718ad80a7195f6a264076f01d734c0f05[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Thu May 3 11:05:23 2018 -0400
+
+    resized main divs in brewery detail and brewery beers
+
+[33mcommit 0d0de9e4eda5619e995abff2fe1c3e89527740e3[m
+Merge: 4f275b7 f41b28f
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Thu May 3 10:28:09 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit 4f275b73e77111d525796cc16547eccd3c9c58d8[m
+Merge: 844421a 14f972d
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Thu May 3 10:27:59 2018 -0400
+
+    cOMMIT
+
+[33mcommit f41b28f55435a1ffe7c95a6ab078ff8dc8846565[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Thu May 3 09:16:02 2018 -0400
+
+    changed photo size in brewery detail
+
+[33mcommit 844421a8a507291cb262c371d8ef361d31c4966f[m
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Thu May 3 09:11:38 2018 -0400
+
+    Commit
+
+[33mcommit 14f972d7b3c9cbc815b05417d724e45d5a4de625[m
+Merge: 23c150f b490a2f
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Thu May 3 00:43:13 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit 23c150f26fb7a472bfcbe2979f5dfeb8753ed011[m
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Thu May 3 00:42:49 2018 -0400
+
+    blah
+
+[33mcommit b490a2fa3bacc142e97c58c0b34e308e55de712a[m
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Wed May 2 16:24:24 2018 -0400
+
+    .
+
+[33mcommit ded3e3d0570381ed182ec10d88550993110548ed[m
+Merge: f53d1a8 145dc31
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Wed May 2 16:18:27 2018 -0400
+
+    hjkkhg
+
+[33mcommit f53d1a8a6ac73c2a4176f9bdb8fd1639e23a3ef0[m
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Wed May 2 16:17:11 2018 -0400
+
+    cool reviews y'all
+
+[33mcommit 145dc31fffb782ef249f39fce96b4c7b9d99768d[m
+Merge: ff3f0a3 7d08909
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Wed May 2 16:09:26 2018 -0400
+
+    checkit
+
+[33mcommit ff3f0a3ecce81764401c60a6c2cbab9e9ce69633[m
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Wed May 2 16:05:38 2018 -0400
+
+    lookin good
+
+[33mcommit 7d089091065753ef02167c1ec11e639df2c6fd5e[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Wed May 2 15:49:05 2018 -0400
+
+    Have brewery beer images and detail image working
+
+[33mcommit 783c8a4db9c2aa26da46db132debe74e2c6562d2[m
+Merge: 0310bb3 b826992
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Wed May 2 14:20:31 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit 0310bb315e927c027ede3c582d4b5b37ef91c63e[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Wed May 2 14:20:16 2018 -0400
+
+    Fixed photo link path in update beer
+
+[33mcommit b8269927c88fcd7a2206090d6b14caf9ab0272bc[m
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Wed May 2 14:14:05 2018 -0400
+
+    db script added date
+
+[33mcommit f6c19180a864ecdff698d5a050e17378b040a747[m
+Merge: 4ddebe0 fe36cfc
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Wed May 2 14:10:33 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit 4ddebe038143705bde55ccfedcbb2513d36f3044[m
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Wed May 2 14:10:25 2018 -0400
+
+    reviews listed, still ugly
+
+[33mcommit fe36cfcab521596e3cc0c25470595363f7ea8db2[m
+Merge: b3050a0 152c789
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Wed May 2 13:49:52 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit 152c789d5a8fcaf60bff20126be6714d0cc18b46[m
+Merge: 6665160 f792669
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Wed May 2 13:49:44 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit b3050a0f223bd222970fd884c4dc4220be91f483[m
+Merge: 5e7891e f792669
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Wed May 2 13:49:39 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit 66651600992ad43b86e66dc5e0cbff466ffb585e[m
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Wed May 2 13:49:29 2018 -0400
+
+    Index
+
+[33mcommit f7926691558e15e43a3711bd6b34d4da51fb25aa[m
+Merge: fa1901b c823abd
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Wed May 2 13:49:04 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit fa1901b78e81e7d0dd4308fdb08537e0cce37132[m
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Wed May 2 13:48:25 2018 -0400
+
+    allbreweries
+
+[33mcommit 5e7891e53503c4ec72361494be74add482386c40[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Wed May 2 13:45:27 2018 -0400
+
+    Added update beer functionality
+
+[33mcommit c823abd6c2eb87b1be55b97486531dbdf7dc0a38[m
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Wed May 2 11:50:58 2018 -0400
+
+    commit
+
+[33mcommit bfb7fa424588ab4b32c10af556532b062725d9bf[m
+Merge: f523486 78bfcfa
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Wed May 2 11:39:20 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit f523486aa10c0a32ab4500d75fdb8645695f5fb8[m
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Wed May 2 11:39:11 2018 -0400
+
+    Index
+
+[33mcommit 78bfcfac081d5e82952e51313807b79e579c004f[m
+Merge: c191790 6c80072
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Wed May 2 10:32:27 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit c1917904323c3772838d895107dd0029d32b7409[m
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Wed May 2 10:32:12 2018 -0400
+
+    .
+
+[33mcommit c0fd67e5113085b43d400e074cd6e7793d6122f3[m
+Merge: 3396afe 6c80072
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Wed May 2 09:29:40 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit 3396afed8629b4f69a9f806213ee3a922e61584c[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Wed May 2 09:29:30 2018 -0400
+
+    Beginning work in DAL
+
+[33mcommit 6c80072f406cccadd6b61f89561039bd6e60b6df[m
+Merge: d5b40c4 69cd37f
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Wed May 2 09:27:10 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit d5b40c4b76e63584d2809a382cd87658b98384a7[m
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Wed May 2 09:27:02 2018 -0400
+
+    parallax
+
+[33mcommit e5c6f315ce623b802744530ca9c65fb22dc1f85d[m
+Merge: ea48b32 69cd37f
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Wed May 2 09:11:01 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit ea48b32e046421a55b50572cc5146ba71f0977ef[m
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Wed May 2 09:10:48 2018 -0400
+
+    .
+
+[33mcommit 69cd37f5ff95f790c125d7610901a16288c0bdda[m
+Merge: 1da7909 d6337e2
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Wed May 2 09:03:58 2018 -0400
+
+    Took local
+
+[33mcommit 1da79092c8c6ed995fd9e960fd9aea30b40f24f9[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Wed May 2 09:03:12 2018 -0400
+
+    Put user check for adding reviews in beer detail page
+
+[33mcommit d6337e27b78e4b6ec0eb2b4c11d19e1c1653bc47[m
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Wed May 2 08:56:37 2018 -0400
+
+    .
+
+[33mcommit 41ae137282c329947fa14b582aac03a1162c3aee[m
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Tue May 1 21:45:49 2018 -0400
+
+    Carousel index
+
+[33mcommit 002cbd9ba68b2072a6af3e398c4172718b88144c[m
+Merge: 744e0ce 33b75cd
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Tue May 1 21:37:28 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit 744e0ce7b194540508438c9ecdc1779e5e92f4b4[m
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Tue May 1 21:37:17 2018 -0400
+
+    Carousel index
+
+[33mcommit 33b75cddd3996c72bb74c0a177bb1ed44b50cdf9[m
+Merge: 702ed00 737bc60
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Tue May 1 16:16:09 2018 -0400
+
+    sdf
+
+[33mcommit 702ed0091372e4dc906a4e4a615ed66870b6a139[m
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Tue May 1 16:14:16 2018 -0400
+
+    review functions
+
+[33mcommit 737bc60dbe6eaf4156fc54174a0fb8c3d16fb7b7[m
+Merge: 4cadf46 de6d157
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Tue May 1 15:21:52 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit 4cadf46e7628dcdc1c8e49d5d600c2dd39e14e21[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Tue May 1 15:20:43 2018 -0400
+
+    Added login method to dal for user; required different input arguments that that of registration
+
+[33mcommit de6d1576619200f48eda77e054a555681e85aa52[m
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Tue May 1 15:18:40 2018 -0400
+
+    commit
+
+[33mcommit 6b8713f37838e3e84f00dda963bec2dd4c5b1ad9[m
+Merge: 424c4b3 80babbe
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Tue May 1 15:14:01 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit 424c4b3c28a665497254a657c4210cd82413d5d5[m
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Tue May 1 15:13:51 2018 -0400
+
+    Commit
+
+[33mcommit 80babbed73654a4f8a23894f70b7496bdd650e73[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Tue May 1 15:13:11 2018 -0400
+
+    Finished up registration view
+
+[33mcommit b8c223e4d3d3304abd8c2c048029892ea02db3e3[m
+Merge: db0054d da467d5
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Tue May 1 14:17:44 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit db0054d5aed2606281ec36c50d65d24b42f5002f[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Tue May 1 14:17:35 2018 -0400
+
+    Helping in BeerDetail view.
+
+[33mcommit da467d53f3c00aaf44b266fac6cc1ad87cc413ed[m
+Merge: 7d61754 dc96f70
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Tue May 1 14:16:36 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit 7d617541bbc6cc21ee323b493a263bed1aef8eaa[m
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Tue May 1 14:16:29 2018 -0400
+
+    review
+
+[33mcommit dc96f702ba8daf74c58941353d6c25bfca2844d5[m
+Merge: d3be9f5 082e6d6
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Tue May 1 13:40:18 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit d3be9f5c339022dc1ba4cbae6567a55f614c790d[m
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Tue May 1 13:40:11 2018 -0400
+
+    commit
+
+[33mcommit 082e6d68db296c524465fdfe4d10bba13ffdf2b9[m
+Merge: 47748cc ad62be3
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Tue May 1 13:39:51 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit 47748cce0ac5cda8243043abe411c9f3245c13a8[m
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Tue May 1 13:39:46 2018 -0400
+
+    review cont...
+
+[33mcommit ad62be32346659618f8aa775085b08c1e716b714[m
+Merge: 094d668 4290389
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Tue May 1 13:36:11 2018 -0400
+
+    okkkkk
+
+[33mcommit 094d66871275276f96b9b475da8f3f3d209e401f[m
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Tue May 1 13:34:22 2018 -0400
+
+    coolbeans
+
+[33mcommit 16bc07897821d0f853cd6d77e73faab6b09e6de3[m
+Merge: 5bea4fd 7cefde7
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Tue May 1 13:33:35 2018 -0400
+
+    cool
+
+[33mcommit 4290389a275a58f54102a9f51d79609faaa71993[m
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Tue May 1 13:16:09 2018 -0400
+
+    Index
+
+[33mcommit 5bea4fd771df2d9e1976be459ff34053e6920416[m
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Tue May 1 13:15:13 2018 -0400
+
+    styling, fixed some validation
+
+[33mcommit 7cefde7719c62a3d89fe77d702ff1c6973cc87a4[m
+Merge: d2cb6c7 11b7e07
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Tue May 1 12:10:17 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit d2cb6c7267e0ba9e571e87cab1ca01c5d590c4bc[m
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Tue May 1 12:10:08 2018 -0400
+
+    commit
+
+[33mcommit 11b7e07d7849c57b871959885d31b7e29aacce17[m
+Merge: 3cceb18 79e585d
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Tue May 1 12:09:32 2018 -0400
+
+    .
+
+[33mcommit 3cceb18a4c9b8c0bc10417a91fd926c70e246c13[m
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Tue May 1 12:08:03 2018 -0400
+
+    started reviews
+
+[33mcommit 79e585d79e2d84ac0d4e588e518e77ffd520306d[m
+Merge: f2530d5 501b7b0
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Tue May 1 10:42:06 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit f2530d5e7f938f80623c0ea0be4c7808b392c7da[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Tue May 1 10:41:58 2018 -0400
+
+    Have pathway all the way to a view of a specific beer working
+
+[33mcommit 501b7b03913d97e333220cf695651804b102a78e[m
+Merge: 7ca8b54 8f2cfc7
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Tue May 1 10:40:37 2018 -0400
+
+    login look-a-nice
+
+[33mcommit 7ca8b54a68e8d900f75c4cb24c73a39db7273a2a[m
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Tue May 1 10:37:01 2018 -0400
+
+    login look-a-nice
+
+[33mcommit 8f2cfc79dc1985f09dd7097620c5bad22ec4cb82[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Tue May 1 10:13:53 2018 -0400
+
+    Fixed default photo image in brewery listings
+
+[33mcommit e8b85e08aa0831ba4a24e8f4cb212c42d985f99d[m
+Merge: cf5846b 3a3f1db
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Tue May 1 09:12:52 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit cf5846b174e9fc73e4c5785ac3e3e735b7797306[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Tue May 1 09:12:45 2018 -0400
+
+    Fixed filename pathway in allbreweries
+
+[33mcommit 3a3f1db51beb21e306933d2e7c1fc49c597fba0f[m
+Merge: 4297491 990ad7d
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Tue May 1 09:08:15 2018 -0400
+
+    kjh
+
+[33mcommit 990ad7d9d1502d39851e7c1cf04a8e429c2c5378[m
+Merge: c5ef72d ba8a8d0
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Tue May 1 08:55:50 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit c5ef72d757a655c2f7de79409b8278d5b829e7e8[m
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Tue May 1 08:54:33 2018 -0400
+
+    show/hide complete
+
+[33mcommit ba8a8d0c6e053283a3e7d33672357bd5c5c38656[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Mon Apr 30 21:31:26 2018 -0400
+
+    Added link to brewery listing in navbar, built all breweries view, and links to detail page on brewery.
+
+[33mcommit ec5b5b39d525c646669049f5f975d2674789f8ff[m
+Merge: ac14ac4 1911561
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Mon Apr 30 21:21:32 2018 -0400
+
+    fixed merge
+
+[33mcommit ac14ac476ad5271b724bc7d8f0c0371f31719555[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Mon Apr 30 21:20:04 2018 -0400
+
+    Beginning work in all breweries view
+
+[33mcommit 4297491d2f17055e201b0f5a61fe22607694043e[m
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Mon Apr 30 20:21:38 2018 -0400
+
+    .
+
+[33mcommit ee387dc084898a471412cfa8eaef6b3d1bb56966[m
+Merge: 4299f19 1911561
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Mon Apr 30 19:52:07 2018 -0400
+
+    check1
+
+[33mcommit 4299f19ce2817e4b13298d2f3dd90b12a0ad9e8f[m
+Merge: 0c20499 3685dea
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Mon Apr 30 19:49:42 2018 -0400
+
+    check1
+
+[33mcommit 191156180c45bf69c8f49fd007757d6589b04574[m
+Merge: 2a9dad0 df4d76d
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Mon Apr 30 16:13:57 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit 2a9dad0d8fafa2ee46f49d2ba4960e8284c3c2cd[m
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Mon Apr 30 16:13:41 2018 -0400
+
+    managebeers
+
+[33mcommit df4d76d44ab24d5b3e496b44f3186ca2dc029c81[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Mon Apr 30 15:48:34 2018 -0400
+
+    Added code in BeerDetail page
+
+[33mcommit 2465067a75603b327570f373b673d749a9a5cd75[m
+Merge: 7fe99e9 53e946b
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Mon Apr 30 14:51:50 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit 7fe99e9a672173367520f8b8ed2b73b9406a106d[m
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Mon Apr 30 14:51:42 2018 -0400
+
+    indexpage
+
+[33mcommit 53e946ba6752c7224987e966725d5691197c896b[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Mon Apr 30 14:50:48 2018 -0400
+
+    Added in security for protected views
+
+[33mcommit 80a581d744e1ac58204700d506b08f730f84f75c[m
+Merge: 02b52ed 3685dea
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Mon Apr 30 14:31:11 2018 -0400
+
+    commit
+
+[33mcommit 02b52ed6ae423dfabd07e1f47b7859a80a2ab583[m
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Mon Apr 30 14:29:15 2018 -0400
+
+    Index
+
+[33mcommit 0c204999a3a90f5497c7fbaafd9db4bc15b07c36[m
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Mon Apr 30 14:27:01 2018 -0400
+
+    topull
+
+[33mcommit 3685dea04025d9726f80e95092e2412cb6fdb7a6[m
+Merge: 39e8210 a958809
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Mon Apr 30 14:26:38 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit 39e8210c315b9dd1af9e4e235cb0513086a94a80[m
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Mon Apr 30 14:26:29 2018 -0400
+
+    add beer stuff
+
+[33mcommit a958809fe0602d0b97c7b18d6e5e5c41ac81eacd[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Mon Apr 30 14:24:13 2018 -0400
+
+    Added Logout function
+
+[33mcommit 3e419a70b3a5b48570a201e8a0396caeefb26983[m
+Merge: 83a692e 1502899
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Mon Apr 30 14:08:21 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit 83a692e48b72219fb77712bf3d3ad00d70a012b6[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Mon Apr 30 14:08:13 2018 -0400
+
+    Finished working on brewery detail page
+
+[33mcommit 1502899b5eb24e9cb6c0ec44d6ff35c7ed968cfb[m
+Merge: 2f4fb2f 306f411
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Mon Apr 30 13:32:03 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit 2f4fb2f16446e94232157b2bd9efb79892b7012b[m
+Merge: c698fd7 97cd699
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Mon Apr 30 13:31:54 2018 -0400
+
+    Commit
+
+[33mcommit 306f41155ebfae7c7bd16bb2048317f9c6436217[m
+Merge: 332626f 97cd699
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Mon Apr 30 13:26:53 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit 332626fe5904cb3eb4ed1277884a259f89ed7e10[m
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Mon Apr 30 13:26:47 2018 -0400
+
+    deletebeer is done
+
+[33mcommit c698fd74901189441b7be5a39c8a12d56d4bcdaa[m
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Mon Apr 30 13:26:40 2018 -0400
+
+    IndexPage
+
+[33mcommit 97cd699f442d7e1bdbd024d11a33449d6c707adb[m
+Merge: 9ec92c5 e1c6710
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Mon Apr 30 12:16:12 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit 9ec92c511d1b85188529e00ad8cc74ea57bd7168[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Mon Apr 30 12:16:03 2018 -0400
+
+    Working in Brewery Detail
+
+[33mcommit e1c6710ce2e651feab38c3ae1a432866c0cdc885[m
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Mon Apr 30 12:14:59 2018 -0400
+
+    added hours to brewery model
+
+[33mcommit 624cf97414aa7b1a4e55128ab92e09ec6d15c525[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Mon Apr 30 11:14:19 2018 -0400
+
+    added closing div tag in brewery detail view
+
+[33mcommit b11b35694cd2b5a9e2e9cf879ad095401aa8ceaf[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Mon Apr 30 11:13:16 2018 -0400
+
+    Added more on brewery detail page and link to beers detail page
+
+[33mcommit 766766180b42a158c7b564f27c6bebb796defc14[m
+Merge: 16ec8bf 79f1faa
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Mon Apr 30 10:38:20 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit 16ec8bf291b9ba04d1b9d06b8e61a204ae9ef5de[m
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Mon Apr 30 10:38:10 2018 -0400
+
+    .
+
+[33mcommit 79f1faafcd913bfe962623b50ebed20b42496202[m
+Merge: d81850f d2a7f1e
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Mon Apr 30 09:55:32 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit d81850f7eb9725f850bfa1851f0d0c5b14599adf[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Mon Apr 30 09:55:22 2018 -0400
+
+    Work done on brewery detail page.
+
+[33mcommit d2a7f1e9751f7330c2a9cfc4a0a030560fec6cd0[m
+Merge: 8c1ebde 748aec6
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Mon Apr 30 09:53:22 2018 -0400
+
+    cool
+
+[33mcommit 8c1ebdeec4e9fc53dc0c6a9633a712c2e807969b[m
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Mon Apr 30 09:51:58 2018 -0400
+
+    brewery cards done
+
+[33mcommit 595f85c053d1e6506744d59c611e2b1ebbcf38d3[m
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Mon Apr 30 09:49:03 2018 -0400
+
+    brewery cards done
+
+[33mcommit 748aec6593565d7945c97e6c2687d4f45c6f5b74[m
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Sun Apr 29 22:49:17 2018 -0400
+
+    deletebeers
+
+[33mcommit 0104bd249c29c93332b54cff2257fee045b884a7[m
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Sun Apr 29 22:35:51 2018 -0400
+
+    delete beer
+
+[33mcommit 6e8045d062e37e79137db69073f0ec16b855d0ed[m
+Merge: d62945e d59a768
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Sun Apr 29 18:51:44 2018 -0400
+
+    oihkj
+
+[33mcommit d62945e983013993db55f39c2d638a4ec491991f[m
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Sun Apr 29 18:48:04 2018 -0400
+
+    .
+
+[33mcommit d59a7686937d086da5d4b6db93db593402a5f57d[m
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Sun Apr 29 18:44:01 2018 -0400
+
+    Beer descriptions
+
+[33mcommit 2f09391340050b5e31b2bab274fc985346e26a5e[m
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Sun Apr 29 16:46:51 2018 -0400
+
+    Beer descriptions
+
+[33mcommit f90fe4fd75445713aef8dc1b1802dbda10bc197a[m
+Merge: 6f6a25e baf2f34
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Sun Apr 29 16:22:25 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit 6f6a25eea109e7bb3bec6663891287b97f2e62ac[m
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Sun Apr 29 16:22:16 2018 -0400
+
+    Get all beers
+
+[33mcommit 3252a39ecf8f3f0547aa50b2dd7412c3d7af3385[m
+Merge: d29a1a9 baf2f34
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Sat Apr 28 21:45:52 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit d29a1a9356f4b1aad04eb1e3d84bafd3e6ce25df[m
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Sat Apr 28 21:45:39 2018 -0400
+
+    .
+
+[33mcommit baf2f345eb8e373325661fc7a7b8cf2ebfffee96[m
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Sat Apr 28 21:21:14 2018 -0400
+
+    bugs add brewery fixed
+
+[33mcommit 8056ba100bd49f6d43138176a6b9d53cce8d6c03[m
+Merge: 946811a c10e778
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Sat Apr 28 20:44:24 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit 946811a92fffac3722a17026addd22698375d6e4[m
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Sat Apr 28 20:35:09 2018 -0400
+
+    finished add brewery functions
+
+[33mcommit c10e778f2a5d5ccd8a1a8f7722fd66b6151175de[m
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Sat Apr 28 19:13:02 2018 -0400
+
+    Beer Detail
+
+[33mcommit fe49f83280c1ef8e578df8c1616c0e88f7782f3d[m
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Sat Apr 28 14:37:51 2018 -0400
+
+    Beer detail
+
+[33mcommit c4364b2e2f50c5580496cf63c51406fcfbc4c4ac[m
+Merge: 5a8d5f1 d9eb988
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Fri Apr 27 16:09:44 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit 5a8d5f1540fed8a694bd99586e7c3a4174635ef7[m
+Merge: 7f5a3da d6ae278
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Fri Apr 27 16:09:33 2018 -0400
+
+    Fixed registration
+
+[33mcommit d9eb988a2b84aaed64897f2732059ff1d92071fd[m
+Merge: bc2a50b 58bf310
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Fri Apr 27 15:41:56 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit bc2a50b004fed6c3876e9aeff631b1e47eebdd5d[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Fri Apr 27 15:40:13 2018 -0400
+
+    Working on Index page content.
+
+[33mcommit 58bf310fb93b502af2dc06eaa3fa519b779eae9f[m
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Fri Apr 27 15:38:57 2018 -0400
+
+    .
+
+[33mcommit 7f5a3da5736bbd329e6871841444edfd9a5c4116[m
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Fri Apr 27 15:29:23 2018 -0400
+
+    fixedRegistration
+
+[33mcommit d6ae278cc81e8ef1e76863db6871abdeea7b861d[m
+Merge: c97219d 02c7018
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Fri Apr 27 13:53:57 2018 -0400
+
+    ......
+
+[33mcommit c97219d3c7ef87c737ffa7fb4e3a51420c661859[m
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Fri Apr 27 13:50:46 2018 -0400
+
+    ...
+
+[33mcommit 02c7018a810bb316c96d52013a5dbf39dcecc652[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Fri Apr 27 13:14:06 2018 -0400
+
+    Routing for index page into detail view is working now.
+
+[33mcommit 5cda149f9c69df534abde52aaf952b5510d7b393[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Fri Apr 27 13:03:18 2018 -0400
+
+    DAL should be fixed now.
+
+[33mcommit 136cb158b555825bc24bc0f4165049957ef7b6a5[m
+Merge: 4ca70bb 18e3722
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Fri Apr 27 12:30:54 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit 4ca70bb4e1683e98fcc59542702547e820a76a68[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Fri Apr 27 12:30:29 2018 -0400
+
+    hopefully fixed?
+
+[33mcommit 18e3722393aaca9c8bd12885a9028e0e0d99fae4[m
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Fri Apr 27 12:27:51 2018 -0400
+
+    fixed maybe?
+
+[33mcommit d4bb2f3e6b9385bfe69de3d0d761e21a98d47703[m
+Merge: 7db87cf 1dd2afd
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Fri Apr 27 11:58:22 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit 7db87cf2083411956050efdd5b64e7e6537c8ea1[m
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Fri Apr 27 11:58:14 2018 -0400
+
+    tomerge
+
+[33mcommit e17eab5c55ec47acd35ea6ee300b41fbb641e62f[m
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Fri Apr 27 11:29:43 2018 -0400
+
+    topush
+
+[33mcommit 1dd2afd7f29f478974b772c8e7a9dd037c4f26f0[m
+Merge: 20578bc 19bcbd9
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Fri Apr 27 11:26:01 2018 -0400
+
+    Fixed merges
+
+[33mcommit 20578bc50a2a5138b2a0dfd4cac8fa7bba0ed396[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Fri Apr 27 11:21:29 2018 -0400
+
+    Fixed Index page issues and Login is finalized.
+
+[33mcommit 19bcbd9dc2b9ae8214c103b2f641a995a12b044c[m
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Fri Apr 27 11:12:18 2018 -0400
+
+    .
+
+[33mcommit b79a111023080789fa45d86e7f142135ba8a18c8[m
+Merge: 33b9d58 66a61ea
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Fri Apr 27 09:11:20 2018 -0400
+
+    .
+
+[33mcommit 33b9d589ba7911103d51b80f1d38d6d4d061e804[m
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Fri Apr 27 09:07:13 2018 -0400
+
+    .
+
+[33mcommit 66a61eadc85dc67baf7ab43bd2aef38abca6c342[m
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Thu Apr 26 23:20:02 2018 -0400
+
+    fixed bugs with addbrewery and user to brewery
+
+[33mcommit 66e8b819d1392e3c10677da527117faef85b893b[m
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Thu Apr 26 23:00:22 2018 -0400
+
+    updates, load in current brewery info to update
+
+[33mcommit 997c8d8cbc53bd99f96e95f6f3af2f2ec781a5ce[m
+Merge: 1477922 1e89691
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Thu Apr 26 20:10:25 2018 -0400
+
+    Commit
+
+[33mcommit 1477922536856adcb4f6e5384bf6f7bc41e0f768[m
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Thu Apr 26 20:07:16 2018 -0400
+
+    "Register fix"
+
+[33mcommit 1e896910abc1419941a831e5e4d0cb150305fcc4[m
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Thu Apr 26 16:59:35 2018 -0400
+
+    pushit
+
+[33mcommit 4100fe60ddf8b4009d727cf323af7aca9f172b5f[m
+Merge: fd3c270 505c420
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Thu Apr 26 16:55:16 2018 -0400
+
+    merge
+
+[33mcommit fd3c27096e67eade7c5ca08cdf2bf1314e2ecd9b[m
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Thu Apr 26 16:51:31 2018 -0400
+
+    photo doneish
+
+[33mcommit 505c4209ed8d91e9f6c6aeb7dd7232c7091b9048[m
+Merge: c454e44 153a138
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Thu Apr 26 16:51:11 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit c454e44ac78cd69e9cfa0561c3cf02098630e15b[m
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Thu Apr 26 16:50:53 2018 -0400
+
+    .
+
+[33mcommit 153a1381d41d04cb123b1ebb090b33e65d82d8eb[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Thu Apr 26 15:51:53 2018 -0400
+
+    Got model working for index view(holds breweries and beers)
+
+[33mcommit ccf497a29b2ccb46fccb029b18bbc78d3bf29664[m
+Merge: 24510b9 ad93e2a
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Thu Apr 26 15:47:38 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit 24510b917393e9fd65ac9c5f74b599ba7f3faa3a[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Thu Apr 26 15:46:05 2018 -0400
+
+    Beginning on brewery detail view, adding beers to the model list for the index page
+
+[33mcommit ad93e2a553b25ff95ddac3968cbb23cadc69a8a1[m
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Thu Apr 26 15:45:30 2018 -0400
+
+    "Commit"
+
+[33mcommit 3a64e0065dc55463dc4464860e1bca29a651e95c[m
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Thu Apr 26 15:12:01 2018 -0400
+
+    "Commit"
+
+[33mcommit 25b21ba8e32a9b55476e7dc2d82fa200881df484[m
+Merge: b1bb354 592a8af
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Thu Apr 26 15:10:41 2018 -0400
+
+    "Commit"
+
+[33mcommit b1bb354f3eeddbd58b813b3fdebe26bf27956300[m
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Thu Apr 26 14:51:52 2018 -0400
+
+    "Commit"
+
+[33mcommit cce1e0613c0bb3f7acfe1502b9c591a56633daa3[m
+Merge: a952048 16cd2c2
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Thu Apr 26 14:51:11 2018 -0400
+
+    "Commit"
+
+[33mcommit 592a8af4a15e7bc9be5511e7ee1d5f56a4f6575a[m
+Merge: ff283e8 18c896f
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Thu Apr 26 14:02:33 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit ff283e805e9a499790ffff0e0ba9306e21ced252[m
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Thu Apr 26 14:02:29 2018 -0400
+
+    .
+
+[33mcommit 18c896f7cb6f91d230dee408b130d0dc3a7b377e[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Thu Apr 26 14:01:58 2018 -0400
+
+    Fixed DAL issue
+
+[33mcommit 862e1e28c7002863aa73573e19a2f75899ed161e[m
+Merge: 32c73ff 7836f2a
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Thu Apr 26 13:58:07 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit 32c73ff11b472a590107a326d30d11740a994e3b[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Thu Apr 26 13:57:47 2018 -0400
+
+    fixed dal
+
+[33mcommit 7836f2a2f0db26fdbf14f8c307dd792cec5479fe[m
+Merge: 314ae61 16cd2c2
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Thu Apr 26 12:35:04 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit 314ae6101f584d9f1587f5324d92e95f2522dbec[m
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Thu Apr 26 12:34:55 2018 -0400
+
+    show/hide
+
+[33mcommit a952048df2d4cbdab63cd2043ccff0902f4bbafc[m
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Thu Apr 26 11:52:03 2018 -0400
+
+    "getBeers"
+
+[33mcommit 16cd2c2ecaac2403915d3f156a3500f1a3041d84[m
+Merge: 6209bfc 3574726
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Thu Apr 26 11:42:00 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit 6209bfc1cedcbac03f126d93887cd3ce9b6862de[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Thu Apr 26 11:41:32 2018 -0400
+
+    Have brewery list in index now
+
+[33mcommit 3574726901d3c36d6f97c2f28df06c2ebf1e237b[m
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Thu Apr 26 10:53:04 2018 -0400
+
+    show/hide
+
+[33mcommit ed4dd2e335b49ec826b06f89f9ffc027e14d144e[m
+Merge: 2ed1d4d f59469b
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Wed Apr 25 21:30:41 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit 2ed1d4d53a83f370624098d8f71b8c21a3c50d26[m
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Wed Apr 25 21:30:28 2018 -0400
+
+    "Commit"
+
+[33mcommit f59469b30e140ccbc4ad7d36be3526d1fd555c8f[m
+Merge: 4a89a47 f17411b
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Wed Apr 25 21:28:38 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit 4a89a472c9900ff57bd925cd6288abeb1dd5a730[m
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Wed Apr 25 21:28:16 2018 -0400
+
+    fileupload working-ish
+
+[33mcommit f17411bfaec0ecd95a3703120a87c8a8145ab46f[m
+Merge: c947967 bb86b0e
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Wed Apr 25 19:10:38 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit c9479678c5c81e99a421f3cb56ca8958472436e2[m
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Wed Apr 25 19:10:19 2018 -0400
+
+    "ClientValidation"
+
+[33mcommit bb86b0e12a34e4d99bf38de4cc39a759af0b6cc3[m
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Wed Apr 25 17:32:45 2018 -0400
+
+    .
+
+[33mcommit 3c2956bc9a31104c002f4bb722cd320e4f1e528a[m
+Merge: 3c78d04 1c445f3
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Wed Apr 25 16:40:06 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit 1c445f31f4e023d61111b7b7a5ebd1bc9af8445c[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Wed Apr 25 16:30:03 2018 -0400
+
+    Relocated addbeer method to correct region, beginning work on index page
+
+[33mcommit 3c78d043a76cf10a29a3e5d40f0cc43412e379fe[m
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Wed Apr 25 16:29:31 2018 -0400
+
+    add beers done
+
+[33mcommit cb77c4fb074475b263e59d298d5c55f3656d3e7b[m
+Merge: 553c3cc 30136b4
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Wed Apr 25 15:43:46 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit 553c3cc64d190df9cffc4c41e88ae3f7f2b02f82[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Wed Apr 25 15:43:38 2018 -0400
+
+    Beginning work in the index view
+
+[33mcommit 30136b46f089b471dac330560cf555ccad837bed[m
+Merge: 0bc32f0 7245404
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Wed Apr 25 15:29:34 2018 -0400
+
+    done with hours of operation
+
+[33mcommit 0bc32f00c6321b29ed7f0bc68f55b6ae63e98066[m
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Wed Apr 25 15:26:14 2018 -0400
+
+    done with hours of operation
+
+[33mcommit 724540467c5e01e3862e29bd83028365c6c02fad[m
+Merge: 676fc93 669b788
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Wed Apr 25 14:35:01 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit 676fc93016a601e4305121ad244d7c4bfd74337d[m
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Wed Apr 25 14:34:45 2018 -0400
+
+    "ViewModel"
+
+[33mcommit 669b7885e24375ef1355e9c0e62d90fb64eacbbd[m
+Merge: 22452fa 6ff7e82
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Wed Apr 25 14:28:39 2018 -0400
+
+    Fixed merge in layout
+
+[33mcommit 22452faa745ff5abb8d30e17e49d42ea2e5b7768[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Wed Apr 25 14:27:49 2018 -0400
+
+    Navbar buttons are armed and fully operational...
+
+[33mcommit 6ff7e8244c988212becc2fd7e7b65c9e866e82eb[m
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Wed Apr 25 13:12:51 2018 -0400
+
+    everything working in add beer except db--still troubleshooting
+
+[33mcommit fac8f3f6f3ee4f6ed93fae21a6ba28a4cc482d35[m
+Merge: 7b2fbfc 067c504
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Wed Apr 25 12:44:15 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit 7b2fbfceebb702ad8ff8b0c353354b5a9869b68a[m
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Wed Apr 25 12:44:02 2018 -0400
+
+    I got that html dropdown yssss
+
+[33mcommit 067c5044a3951e0e8228e1d50d7d17e0baf81313[m
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Wed Apr 25 11:46:46 2018 -0400
+
+    "ActionLink"
+
+[33mcommit ce9395e83397a60ce678b84d2d7e2f3a361477b2[m
+Merge: 09dd061 3bf2473
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Wed Apr 25 11:28:08 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit 09dd061148343a81154a2dc28ea58d2f2eec02de[m
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Wed Apr 25 11:27:56 2018 -0400
+
+    "Commit"
+
+[33mcommit 3bf24733a0a1947213aa665158f9441b27099432[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Wed Apr 25 11:09:26 2018 -0400
+
+    All on same page
+
+[33mcommit df2f0ab7fda812bf49cb10e6bbea6e71891cbdaa[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Wed Apr 25 11:00:20 2018 -0400
+
+    Have user login function working.
+
+[33mcommit 9b719b0c8873ea76691c3cf7b9eae3a365e7db8f[m
+Merge: 1ceeefa 0466154
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Wed Apr 25 10:27:29 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit 0466154aa3ba012e78b6c5ecde42bacc4de31987[m
+Merge: 9a10f30 dea23cd
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Wed Apr 25 10:26:48 2018 -0400
+
+    "View"
+
+[33mcommit 1ceeefab9e9aa09dc0bbb4d0d469e598a068d981[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Wed Apr 25 10:25:37 2018 -0400
+
+    Added null check for mapuserfromreader brewery_id property
+
+[33mcommit 9a10f303f3e67b230c28be37871a14bc496444eb[m
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Wed Apr 25 10:13:32 2018 -0400
+
+    commit
+
+[33mcommit dea23cd1456c68f02e0e9f4fbb2e4e4556a6748b[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Wed Apr 25 10:00:07 2018 -0400
+
+    Hopefully fixed registration!
+
+[33mcommit 01b3f953e5371b8ee57bfa4e2a9f8e71c253801c[m
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Tue Apr 24 21:13:34 2018 -0400
+
+    View
+
+[33mcommit 25254bf6e9874684b5e644812d1a76647a263e19[m
+Merge: 7468076 c92c544
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Tue Apr 24 21:08:28 2018 -0400
+
+    Committing merge
+
+[33mcommit 746807657ead872fb4efe0ff250e143af77a9b4e[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Tue Apr 24 21:07:24 2018 -0400
+
+    Have login page mostly functioning; mapuserfromreader seems to be improperly mapping data, as the user is being returned back with all fields null.
+
+[33mcommit c92c544f5c4cc1f253d9230bc1050dfe560e5551[m
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Tue Apr 24 19:43:58 2018 -0400
+
+    index added
+
+[33mcommit e4da9ca584b67f7abcfdce6b371ef7d069981935[m
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Tue Apr 24 17:26:45 2018 -0400
+
+    Added
+
+[33mcommit e8d67132096704e97e227d21928c859a0d53b793[m
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Tue Apr 24 17:14:30 2018 -0400
+
+    remodel
+
+[33mcommit 208263e6a35d1f802d63855c57d0f8a14eb88edb[m
+Merge: 5483c18 b16c08c
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Tue Apr 24 12:46:12 2018 -0400
+
+    mergeYo
+
+[33mcommit 5483c18493060c41d2f1c20d748908cb717a1969[m
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Tue Apr 24 12:43:04 2018 -0400
+
+    updatebrewery
+
+[33mcommit b16c08c849848d073f899ea3ae2593260491a0bc[m
+Merge: 46f246d f0c57a7
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Tue Apr 24 12:38:09 2018 -0400
+
+    he
+
+[33mcommit 46f246d0c0ddd8249d47dd5d24378d390a34181d[m
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Tue Apr 24 12:36:10 2018 -0400
+
+    .
+
+[33mcommit f0c57a7d0c9ef656d35392da98680b5fc7c14606[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Tue Apr 24 12:20:02 2018 -0400
+
+    Fixed Login view.
+
+[33mcommit 3216a9755c3171fc884662cac22be9826cf3c73f[m
+Merge: 1a1f5cb 6681d1e
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Tue Apr 24 12:05:09 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit 1a1f5cb288746cf0c06f7652cf55502fd6b82ad4[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Tue Apr 24 12:04:43 2018 -0400
+
+    Getting closer to figuring out routing for user login
+
+[33mcommit 6681d1ea3b33a7ff7e404d707bd9424d2f0ab8a3[m
+Merge: 61769e4 e958567
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Tue Apr 24 12:00:23 2018 -0400
+
+    m
+
+[33mcommit 61769e4a44054c2ecd04c04083fa0571c0547795[m
+Merge: ba334cb 8016967
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Tue Apr 24 11:57:45 2018 -0400
+
+    more add beer
+
+[33mcommit e958567f0b6d7b41c96476665c64879aee79ca62[m
+Merge: abf90ee 8016967
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Tue Apr 24 11:57:12 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit abf90ee2870c4e425cfe0889ea0ce5db67d3c1fb[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Tue Apr 24 11:56:57 2018 -0400
+
+    Added authentication, adds user into session
+
+[33mcommit ba334cbeefd917820299efe07407c6c2d4f26332[m
+Merge: 4c78988 b278c6a
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Tue Apr 24 11:49:13 2018 -0400
+
+    .
+
+[33mcommit 80169670ef1441adbcfc69e5bf815f247bbf7fb6[m
+Merge: 3beeb6f b278c6a
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Tue Apr 24 11:48:50 2018 -0400
+
+    "Commit"
+
+[33mcommit 3beeb6f01652cc6223b2d243f2f15cebbb767cbc[m
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Tue Apr 24 11:47:15 2018 -0400
+
+    "View"
+
+[33mcommit 5d8fed1c637ab3f67af16aeb96d80b79787edfc4[m
+Merge: 8892c13 55ba892
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Tue Apr 24 11:46:57 2018 -0400
+
+    "View"
+
+[33mcommit 4c78988ece8c208e00cbba197f8ed514ef75c9da[m
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Tue Apr 24 11:44:18 2018 -0400
+
+    addbeervalidation
+
+[33mcommit b278c6ae2ae300b996a6453d25a8199216e3a0e6[m
+Merge: 5c42df4 55ba892
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Tue Apr 24 11:39:09 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit 5c42df48018f1d92f55b5db5fa5363dbfe9f0850[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Tue Apr 24 11:38:32 2018 -0400
+
+    Got Login working using email
+
+[33mcommit 8892c138e45c395d8cd15c3fdb6ef8b6280410ac[m
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Tue Apr 24 10:50:55 2018 -0400
+
+    "Commit"
+
+[33mcommit 028fab8448e0d1ef2c04b40efc193847628de7e8[m
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Tue Apr 24 10:50:41 2018 -0400
+
+    "Commit"
+
+[33mcommit f24cc72cbf3a9c6d9fe4db3958fea0ddd5a4af03[m
+Merge: beb109c 6028824
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Tue Apr 24 10:50:19 2018 -0400
+
+    "commit"
+
+[33mcommit 55ba892b4e051c562e1607dcb2573b7fe22c352a[m
+Merge: d802da5 601966a
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Tue Apr 24 10:45:56 2018 -0400
+
+    fixedmerge
+
+[33mcommit d802da5f7c22b3e631593aa5efc2c2305d2012af[m
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Tue Apr 24 10:23:12 2018 -0400
+
+    validation for brewerys
+
+[33mcommit 8f6b61e0956eb8888aacbb462abce069f4e5ea53[m
+Merge: 7fef0e9 601966a
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Tue Apr 24 10:20:23 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit 7fef0e97642a19f5016b71b738499d3fbc154af6[m
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Tue Apr 24 10:19:51 2018 -0400
+
+    addbeer
+
+[33mcommit 601966ae01cc25d838ea981d29962b88f8989249[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Tue Apr 24 10:12:38 2018 -0400
+
+    Added user login
+
+[33mcommit beb109cc4a5c16ded313e1adbff0dd3e4bf25a6c[m
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Tue Apr 24 09:37:21 2018 -0400
+
+    "Coomit"
+
+[33mcommit 6028824d83f429a81238350be299b18a941e506a[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Tue Apr 24 09:36:12 2018 -0400
+
+    Added user stuff
+
+[33mcommit ced02f4441fc1fdb4b46fd8621ca2b45ac99c8f3[m
+Merge: f5da5c1 257aff5
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Tue Apr 24 09:11:14 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit f5da5c14ebf5734c27c2a14defa44be3f41864c6[m
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Tue Apr 24 09:10:42 2018 -0400
+
+    dal
+
+[33mcommit 850326ec77be1c285ae8b291ac6f68b980f12e88[m
+Merge: 851a4b6 257aff5
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Tue Apr 24 09:08:03 2018 -0400
+
+    "commit"
+
+[33mcommit 851a4b6d2319f1e2d3bb6001846d7d36f68de16f[m
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Tue Apr 24 09:01:20 2018 -0400
+
+    "Commit"
+
+[33mcommit 2b941aaeb7e9a8de723b6508d0c93cba3afad1bf[m
+Merge: 09d4f94 bc7729f
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Tue Apr 24 09:00:55 2018 -0400
+
+[33mcommit 257aff5c6df6e7afe41b30454b0007c9209d68d0[m
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Mon Apr 23 21:22:06 2018 -0400
+
+    brewer/brewry functions working
+
+[33mcommit c0b5ca7a01edce15bac9e16bf27d338e28402194[m
+Merge: 86ab0f5 662323c
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Mon Apr 23 16:04:56 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit 86ab0f5832ff683363a2348e0e8418ec9fc596cd[m
+Author: Mary Rachael Brown <maryrachaelbrown@gmail.com>
+Date:   Mon Apr 23 16:04:39 2018 -0400
+
+    beer model
+
+[33mcommit 662323c8b7b08f1983240cfbaff9426d0abf8c04[m
+Merge: 82931f2 bc7729f
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Mon Apr 23 16:04:33 2018 -0400
+
+    Merge branch 'master' of https://bitbucket.org/te-cin-cohort-1/capstone-team-alpha
+
+[33mcommit 82931f231c36b9091da96516b798a1c840aaa9b7[m
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Mon Apr 23 16:01:47 2018 -0400
+
+    updated packages
+
+[33mcommit 09d4f941195d7d939bda30fd599078462bcdf4ae[m
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Mon Apr 23 15:34:55 2018 -0400
+
+    "DAL"
+
+[33mcommit bc7729f1175b5185d467656dad0633d055979f12[m
+Merge: ac554e1 f7a84fd
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Mon Apr 23 15:17:34 2018 -0400
+
+    Fixed merge
+
+[33mcommit ac554e1d8f410732512cf219f873f66d82bad214[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Mon Apr 23 15:14:34 2018 -0400
+
+    Continuing work on Log in
+
+[33mcommit 51ef808fef3f25d53807881fa7cc610a08a37910[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Mon Apr 23 15:00:28 2018 -0400
+
+    Finished GetUser method located in UserDAL
+
+[33mcommit f7a84fd4af87f15c2138e1f53809064020b2de5e[m
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Mon Apr 23 14:15:47 2018 -0400
+
+    fixed bugs
+
+[33mcommit 49031edb584791e944ea0a6ce34da5b7d6081916[m
+Merge: c7eb40f e990402
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Mon Apr 23 14:07:18 2018 -0400
+
+    ninject added
+
+[33mcommit c7eb40fba7aabcb066f7430f18fb1632e6e00cca[m
+Author: Mataan Abucar <mabucar88@gmail.com>
+Date:   Mon Apr 23 13:10:41 2018 -0400
+
+    started brewery stuff
+
+[33mcommit fafc7ff242cb5cb9b71e666f188c0d5f738df93c[m
+Merge: 32c294c e990402
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Mon Apr 23 12:57:58 2018 -0400
+
+    "commit"
+
+[33mcommit 32c294c99a16eeb159ac0936c8fba07e4ba43cc9[m
+Author: Adam George <afgeorge2@gmail.com>
+Date:   Mon Apr 23 12:51:56 2018 -0400
+
+    commit
+
+[33mcommit e9904028d48c0ef87cb6e7b7456ce7c3c8d1a163[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Mon Apr 23 12:27:34 2018 -0400
+
+    Added ActionResult in View, Login View, and building the getUser method
+
+[33mcommit b8e339d065d381bd138caae00a42af1dd7edcf3a[m
+Author: Robert Campbell <thecodicier@gmail.com>
+Date:   Mon Apr 23 11:33:37 2018 -0400
+
+    Created User Model
+
+[33mcommit cd135586150de48a90312ca98d66f139346d763c[m
+Author: Aaron Tyler <aaron.tyler@techelevator.com>
+Date:   Mon Apr 23 08:44:40 2018 -0400
+
+    Added seed project
+
+[33mcommit bfd90d911f5efdbe521e03f603a315d23ce80cc5[m
+Author: Aaron Tyler <aaron.tyler@techelevator.com>
+Date:   Mon Apr 23 08:37:32 2018 -0400
+
+    Added .gitignore

@@ -1,0 +1,121 @@
+﻿@{
+    string sess = (string)Session["LoggedIn"];
+}
+<head>
+    <link href="~/Content/IndexCss.css" rel="stylesheet" />
+</head>
+
+<div class="row">
+    <div class="col-md-6 col-sm-12 beerBox">
+        <img class="ml-5 w-75 beerEmp" src="~/Photos/bLOGO2.png" />
+    </div>
+
+    @*--------if logged in this block is hidden------------*@
+    @if (sess != "true")
+    {
+        @*------------this is the mobile view-------------------*@
+        <div class="col-md-6 col-sm-12 aboutUs">
+            <div class="jumbotron px-3 py-1 mt-4 smallview">
+                <div class="card px-3 py-0" id="headline" style="padding: 25px; border-radius: 4px;">
+                    <p class="font2">
+                        Do you love beer? Well you're in the right place! Welcome to Brewery Emporium, a place where you can find a new brewery to check out or just see what's going on at your favorite brewery.
+                        Register today and contribute to Cincy's Favorites and let the city know your favorite.
+                    </p>
+                    <div>
+                        @Html.ActionLink("Login Here", "Login", "Home", new { @class = "waves-effect waves-brown btn teal accent-1 black-text" })
+                    </div>
+                    <p class="font2">Want to sign up?</p>
+                    <div>
+                        @Html.ActionLink("Register Here", "UserRegistration", "Home", new { @class = "waves-effect waves-brown btn teal accent-1 black-text" })
+                    </div>
+
+                    <p class="font2">
+                        Want to get your brewery on the map? or at least on Brewery Emporium... Fill out our quick submission form and we'll save a spot for you!
+                    </p>
+                </div>
+            </div>
+
+            @*------------this is the mobile view-------------------*@
+            <div class="jumbotron px-3 py-1 mt-4 largeview" style="height: 93%;">
+                <div class="card px-3 py-0" id="headline" style="padding: 25px; border-radius: 4px;height: 95%;">
+                    <h4>Welcome</h4>
+                    <p class="font3">
+                        Do you love beer? Well you're in the right place! Welcome to Brewsters, a place where you can find a new brewery to check out or just see what's going on at your favorite brewery.
+                        Register today and contribute to Cincy's Favorites and let the city know your favorite.
+                    </p>
+                    <div class="justify-content-between" style="display: flex;">
+                        <div>
+                            @Html.ActionLink("Login Here", "Login", "Home", new { @class = "waves-effect waves-brown btn teal accent-1 black-text" })
+                        </div>
+                        <div>
+                            @Html.ActionLink("Register Here", "UserRegistration", "Home", new { @class = "waves-effect waves-brown btn teal accent-1 black-text" })
+                        </div>
+                    </div>
+                    <p class="font3">
+                        Want to get your brewery on the map? or at least on Brewery Emporium... Fill out our quick submission form and we'll save a spot for you!
+                    </p>
+                    <button class="waves-effect waves-brown btn teal accent-1 black-text">Brewery Submission Form</button>
+                </div>
+            </div>
+        </div>
+
+    }
+
+</div>
+
+
+
+@*------------this is where the carousel is loaded in-------------------*@
+<div class="row">
+    <div class="jumbotron w-75 pt-2 pb-5 mx-auto center col-11">
+        <h3 class="text center my-2">Cincy's Favorites</h3>
+        <div id="cCell" class="carousel mx-auto">
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+
+    $(function () {
+        $.ajax({
+            url: "/Home/GetTopBeers",
+            method: "GET",
+            dataType: "json"
+        }).done(function (beers) {
+            console.log(beers)
+            for (var i = 0; i < beers.length; i++) {
+
+                $("#cCell").append(`<div class="carousel-cell z-depth-3"><h4>#${i + 1}</h4><a href="/home/beerDetail?beerID=${beers[i].BeerID}">
+                <img class="center-block z-depth-2" src="/Photos/Beers/${beers[i].Name}.jpg" alt="flight formation" /></a>
+                <h4>${beers[i].Name}</h4><div><strong>Average Rating:</strong><fine> ${beers[i].AverageRating}</fine><br /><strong>Total Votes:</strong><fine> ${beers[i].TotalVotes}</fine></div>`)
+            }
+        })
+    })
+
+
+    setTimeout(function () {
+
+        var $carousel = $('.carousel').flickity({
+            imagesLoaded: false,
+            percentPosition: false,
+            wrapAround: true,
+            //initialIndex: 2,
+            autoPlay: 1500,
+            //pauseAutoPlayOnHover: true,
+            //freeScroll: true,
+            //freeScrollFriction: 0.03
+        });
+
+        var $imgs = $carousel.find('.carousel-cell img');
+        var docStyle = document.documentElement.style;
+        var transformProp = typeof docStyle.transform == 'string' ?
+            'transform' : 'WebkitTransform';
+        var flkty = $carousel.data('flickity');
+
+    }, 700)
+
+    $('#your-flickity-select').on('select.flickity', function () { $('#your-flickity-select').flickity('playPlayer') })
+
+</script>

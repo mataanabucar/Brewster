@@ -1,0 +1,543 @@
+--==============================================================
+--uncomment section below if you need to create NEW database....
+--this will create new database called "Brewerys"
+--==============================================================
+
+--USE [master]
+--GO
+--CREATE DATABASE [Brewery]
+--GO
+--USE [Brewery]
+--GO
+
+----========================================
+----==== END OF CREATE DATABASE SECTION ====
+----========================================
+
+
+
+
+----=====================================================================================
+----uncomment section below if database exists and your running new table creation....
+----this will remove old tables/data and create new Tables in "Brewery" with initial data
+----=====================================================================================
+
+BEGIN TRY BEGIN TRANSACTION;
+DROP TABLE reviews
+COMMIT;END TRY BEGIN CATCH ROLLBACK;END CATCH;
+BEGIN TRY BEGIN TRANSACTION;
+DROP TABLE beerPhotos
+COMMIT;END TRY BEGIN CATCH ROLLBACK;END CATCH;
+BEGIN TRY BEGIN TRANSACTION;
+DROP TABLE breweryPhotos
+COMMIT;END TRY BEGIN CATCH ROLLBACK;END CATCH;
+BEGIN TRY BEGIN TRANSACTION;
+DROP TABLE beers
+COMMIT;END TRY BEGIN CATCH ROLLBACK;END CATCH;
+BEGIN TRY BEGIN TRANSACTION;
+DROP TABLE users
+COMMIT;END TRY BEGIN CATCH ROLLBACK;END CATCH;
+BEGIN TRY BEGIN TRANSACTION;
+DROP TABLE operation
+COMMIT;END TRY BEGIN CATCH ROLLBACK;END CATCH;
+BEGIN TRY BEGIN TRANSACTION;
+DROP TABLE breweries
+COMMIT;END TRY BEGIN CATCH ROLLBACK;END CATCH;
+
+----========================================
+----==== END OF DELETE EXISITING TABLES ====
+----========================================
+
+
+
+
+
+----========================================
+----====  TABLE AND DATA SCRIPT BELOW  =====
+----========================================
+
+BEGIN TRY
+    BEGIN TRANSACTION;
+CREATE TABLE breweries
+(
+  id            INT IDENTITY( 1, 1 ),
+  name          VARCHAR(100) NOT NULL,
+  history       VARCHAR(MAX) NULL,
+  imagery       VARCHAR(MAX) NULL,
+  address       VARCHAR(300) NULL,
+  contact_name  VARCHAR(100) NULL,
+  contact_email VARCHAR(100) NULL,
+  contact_phone VARCHAR(30) NULL,
+  CONSTRAINT pk_breweries PRIMARY KEY( id ), );
+
+CREATE TABLE operation
+(
+  brewery_id INT NOT NULL,
+  DAY        VARCHAR(12) NULL,
+  opens      VARCHAR(50) NULL,
+  closes     VARCHAR(50) NULL,
+  CONSTRAINT fk_operation_breweries FOREIGN KEY( brewery_id ) REFERENCES breweries( id ));
+
+
+CREATE TABLE users
+(
+  id           INT IDENTITY( 1, 1 ),
+  email        VARCHAR(200)
+  UNIQUE NOT NULL,
+  username     VARCHAR(100) NOT NULL,
+  --password     VARCHAR(200) NOT NULL,
+  slowhashsalt VARCHAR(100) NOT NULL,
+  is_brewer    BIT NOT NULL
+                   DEFAULT 0,
+  brewery_id   INT NULL,
+  is_admin     BIT NOT NULL
+                   DEFAULT 0,
+  CONSTRAINT pk_users PRIMARY KEY( id ),
+  CONSTRAINT fk_users_breweries FOREIGN KEY( brewery_id ) REFERENCES breweries( id ));
+
+CREATE TABLE beers
+(
+  id          INT IDENTITY( 1, 1 ),
+  name        VARCHAR(MAX) NOT NULL,
+  description VARCHAR(MAX) NOT NULL,
+  IMAGE       VARCHAR(100) NULL,
+  abv         VARCHAR(20) NULL,
+  --abv         REAL NULL,
+  beer_type   VARCHAR(100) NOT NULL,
+  brewery_id  INT NOT NULL,
+  show_hide   BIT NOT NULL
+                  DEFAULT 1,
+  CONSTRAINT pk_beers PRIMARY KEY( id ),
+  CONSTRAINT fk_beers_brewery_info FOREIGN KEY( brewery_id ) REFERENCES breweries( id ));
+
+CREATE TABLE breweryPhotos
+(
+  BreweryPhotoID  INT IDENTITY( 1, 1 ),
+  FILE_NAME   VARCHAR(100) NULL,
+  brewery_id  INT NULL,
+  profile_pic BIT NULL
+                  DEFAULT 0,
+  CONSTRAINT fk_breweryPhotos_breweries FOREIGN KEY( brewery_id ) REFERENCES breweries( id ), );
+
+
+CREATE TABLE beerPhotos
+(
+  BeerPhotoID INT IDENTITY( 1, 1 ),
+  FILE_NAME   VARCHAR(100) NULL,
+  beer_id     INT NULL,
+  breweryID   INT NOT NULL
+                  CONSTRAINT fk_beerPhotos_beerid FOREIGN KEY( beer_id ) REFERENCES beers( id ),
+  CONSTRAINT fk_beerPhotos_breweries FOREIGN KEY( breweryID ) REFERENCES breweries( id ));
+
+CREATE TABLE reviews
+(
+  id      INT IDENTITY( 1, 1 ),
+  USER_ID INT NOT NULL,
+  beer_id INT NOT NULL,
+  rating  INT NOT NULL,
+  review  VARCHAR(MAX) NOT NULL,
+  review_date date null,
+  CONSTRAINT pk_reviews PRIMARY KEY( id ),
+  CONSTRAINT fk_reviews_user_info FOREIGN KEY( USER_ID ) REFERENCES users( id ),
+  CONSTRAINT fk_reviews_beers FOREIGN KEY( beer_id ) REFERENCES beers( id ), );
+
+      COMMIT;
+END TRY
+BEGIN CATCH
+    ROLLBACK;
+END CATCH;
+
+
+
+-----------------------------ADD DATA TO TABLES BELOW----------------------------------------
+----  | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |  --
+----  V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V  --
+
+
+--------------------------------BREWERIES
+BEGIN TRY
+    BEGIN TRANSACTION;
+INSERT INTO breweries
+(name,
+ history,
+ address,
+ contact_name,
+ contact_email,
+ contact_phone)
+VALUES
+(
+  'MadTree Brewing', 'Taproom, carryout, café, family hangout, meeting place… the MadTree taproom is a little bit of everything. Whether you want to fill up your growler or meet up with some of your friends for dinner and a beer, we are happy to have you drop in. ', '3301 Madison Rd, Cincinnati, OH 45209', 'Mataan', 'MadTreeBrew@OTR.com', '(513) 836-8733'),
+(
+  'The Woodburn Brewery', 'Legend tells us the phoenix was a creature of unmatched beauty, living for a thousand years before going out in a blaze of glory. And just when you thought that bird was dead, it would rise from its own ashes, full of new life. That’s why we chose the phoenix as our brand mark. We believe in the rebirth of Cincinnati’s proud brewing legacy. The best is yet to come. And it’ll be delicious.', '2800 Woodburn Ave, Cincinnati, OH 45206', 'Owner', 'WoodburnBrewery@OTR.com', '(513) 221-2337'),
+(
+  'Nine Giant', 'Nine Giant started with a simple question:  “What would make the ultimate taproom experience?”  For us, the answers were pretty easy.  Constant evolution of hand-crafted beers.  Scratch-made food, sourced from the highest quality ingredients.  A smaller, more intimate environment.  And a glistening wall of blue subway tile.', '6095 Montgomery Rd, Cincinnati, OH 45213', 'Adam', '9Giant@nine.com', '(513) 366-4550'),
+(
+  'Rhinegeist Brewery', 'Our name, Rhinegeist, translates to "Ghost of the Rhine" and refers to our place in the historic Over-the-Rhine Brewery District in Cincinnati. Built within the skeleton of the old Moerlein bottling plant (1895), we brew batches of beer that sing with flavor.', '1910 Elm St, Cincinnati, OH 45202', 'Mary Rachel', 'MadTreeBrew@OTR.com', '(513) 381-1367'),
+(
+  'Fifty West Brewing Company', 'Located in a former roadside speakeasy on US Route 50 heading west into the city of Cincinnati, Fifty West Brewing Company first opened its doors in November of 2012. Since then, one thing has remained the same. Every time you have a Fifty West beer, you know it was handmade in small batches with a focus on the four virtues we hold closest to our hearts: craftsmanship, tradition, innovation, and patience.', '7668 Route 50 Cincinnati, OH', 'Owner', 'WoodburnBrewery@OTR.com', '(513) 834-8789');
+
+        COMMIT;
+END TRY
+BEGIN CATCH
+    ROLLBACK;
+END CATCH;
+
+
+--------------------------------BEERS
+BEGIN TRY
+    BEGIN TRANSACTION;
+INSERT INTO beers
+(name,
+ description,
+ abv,
+ beer_type,
+ brewery_id)
+VALUES
+(
+  'PSYCHOPATHY', 'Explore the blend of citrus, bright, and floral aromas. Additional citrus flavors follow alongside a smooth bitterness. It finishes with a medium body and a slightly sweet, malty backbone. Trust your senses.', '6.9%', 'IPA', 1),
+(
+  'LIFT', 'Whether taking a break from a hard day of work or just a huge day of hops, this crisp refreshing beer with a hint of orange will lift your spirits without lowering your expectations for what a craft beer should be.', '4.7%', 'KÖLSCH', 1),
+(
+  'PSA', 'PSA was designed to be just that, a Public Service Announcement that craft beer can be both thoughtful and approachable. ', '4.5%', 'PALE ALE', 1),
+(
+  'HAPPY AMBER', 'This dry-hopped ale combines carmel and biscuit malt flavors in happy equilibrium with late addition American hops. The approachable balance is intentional although the name is "hoppy accident."', '6%', 'AMBER', 1);
+
+INSERT INTO beers
+(name,
+ description,
+ abv,
+ beer_type,
+ brewery_id)
+VALUES
+(
+  'BERLINER WEISSE', 'Tart, bubbly, and refreshing Berliner.', '4.0%', 'WHEAT', 2),
+(
+  'BREAKFAST PORTER', 'Notes of chocolate, honey, and graham cracker…said to taste like a Teddy Graham.', '6.3%', 'PORTER', 2),
+(
+  'CEDAR IPA', 'Earthy and life-changing.', '6.8%', 'IPA', 2),
+(
+  'HAMMER SESSION IPA', 'Juicy, floral, citrus.', '5.3%', 'IPA', 2);
+
+INSERT INTO beers
+(name,
+ description,
+ abv,
+ beer_type,
+ brewery_id)
+VALUES
+(
+  'CREAM', 'Light and tasty. Nice way to start the night.', '5.2%', 'Cream Ale', 3),
+(
+  'Electrify', 'A beautifully hazy pale ale featuring Wakatu, Motueka and Idaho 7 hops for aromas of fresh crushed citrus and orange blossom.', '5%', 'PALE ALE', 3),
+(
+  'Infinite Spark', 'Our latest one-off IPA series featuring Galaxy and Columbus hops, ripe with aromas of tangerine peel and juicy, dank herbaciousness.', '6.6%', 'IPA ', 3),
+(
+  'Codex', 'A crisp, dry saison with aromas of fresh tangerine, honeysuckle and lilac', '5.5%', 'FARMHOUSE ALE', 3);
+
+INSERT INTO beers
+(name,
+ description,
+ abv,
+ beer_type,
+ brewery_id)
+VALUES
+(
+  'TRUTH', 'Brewed with a nod to the Pacific, hops sizzle with tropical fruit aroma, grapefruit and mango notes and a dry finish.', '7.2%', 'IPA', 4),
+(
+  'COUGAR', 'Hopped with arguable restraint with Crystal and Bravo hops, Cougar stays fierce enough to raise eyebrows yet is tame enough to be called sessionable.', '4.8%', 'BLONDE ALE', 4),
+(
+  'BUBBLES', 'A Rosé Ale made with apple, peach and cranberry, for additional pink hue, tartness and juicy fruitiness.', '6.2%', 'ROSÉ ALE', 4),
+(
+  'HUSTLE', 'This India Pale Ale takes a hard, hoppy cut at a soft, fluffy hanging curve, driving notes of peach, tangerine and citrus back, back, back...gone.', '6.0%', 'IPA', 4);
+
+  INSERT INTO beers
+(name,
+ description,
+ abv,
+ beer_type,
+ brewery_id)
+VALUES
+(
+  'Coast to Coast', '...', '%', 'IPA', 5),
+(
+  'Doom Pedal', '...', '%', 'White Ale', 5),
+(
+  'American Lager', '...', '%', 'Pilsner', 5);
+
+        COMMIT;
+END TRY
+BEGIN CATCH
+    ROLLBACK;
+END CATCH;
+
+--------------------------------USERS
+BEGIN TRY
+    BEGIN TRANSACTION;
+INSERT INTO users
+(email,
+ username,
+ --password,
+ slowhashsalt,
+ is_brewer,
+ brewery_id,
+ is_admin)
+VALUES
+(
+  'admin@admin.com', 'Administrator', '6/SSwmQGW6KxMQ==:47adbf593674b27f31725fbcc8fdb1348cf810f7158e8fbe035ab06c3ba50da8', 0, NULL, 1);
+--(
+--  'beerlover@user.com', 'Beer Lover #1', 'password', 0, NULL, 0);
+--(
+--  'mabucar1@gmail.com', 'mataanabucar1', 'password', 1, 1, 0),
+--(
+--  'mabucar2@gmail.com', 'mataanabucar2', 'password', 1, 2, 0),
+--(
+--  'mabucar3@gmail.com', 'mataanabucar3', 'password', 1, 3, 0),
+--(
+--  'mabucar4@gmail.com', 'mataanabucar4', 'password', 1, 4, 0),
+--(
+--  'mabucar5@gmail.com', 'mataanabucar5', 'password', 1, 5, 0);
+
+
+  INSERT INTO beerPhotos
+VALUES
+(
+  'PSYCHOPATHY.jpg		', 1, 1),
+(
+  'LIFT.jpg				', 2, 1),
+(
+  'PSA.jpg				', 3, 1),
+(
+  'HAPPY AMBER.jpg		', 4, 1),
+(
+  'BERLINER WEISSE.jpg	', 5, 2),
+(
+  'BREAKFAST PORTER.jpg	', 6, 2),
+(
+  'CEDAR IPA.jpg		 	', 7, 2),
+(
+  'HAMMER SESSION IPA.jpg	', 8, 2),
+(
+  'CREAM.jpg			', 9, 3),
+(
+  'Electrify.jpg			', 10, 3),
+(
+  'Infinite Spark.jpg	 	', 11, 3),
+(
+  'Codex.jpg			', 12, 3),
+(
+  'TRUTH.jpg			', 13, 4),
+(
+  'COUGAR.jpg			', 14, 4),
+(
+  'BUBBLES.jpg			', 15, 4),
+(
+  'HUSTLE.jpg			', 16, 4);		 
+
+
+
+INSERT INTO breweryPhotos
+VALUES
+(
+  'defaultPhoto.jpg', 1, 0),
+(
+  'defaultPhoto.jpg', 2, 0),
+(
+  'defaultPhoto.jpg', 3, 0),
+(
+  'defaultPhoto.jpg', 4, 0),
+(
+  'defaultPhoto.jpg', 5, 0),
+(
+  'MadTree Brewing1.jpg', 1, 0),
+(
+  'MadTree Brewing1.jpg', 1, 0),
+(
+  'MadTree Brewing1.jpg', 1, 0),
+(
+  'The Woodburn Brewery35.jpg', 2, 0),
+(
+  'The Woodburn Brewery46.jpg', 2, 0),
+(
+  'The Woodburn Brewery49.jpg', 2, 0),
+(
+  'The Woodburn Brewery50.jpg', 2, 1),
+(
+  'MadTree Brewing45.jpg', 1, 1),
+(
+  'MadTree Brewing40.jpg', 1, 0),
+(
+  'MadTree Brewing41.jpg', 1, 0),
+(
+  'MadTree Brewing42.jpg', 1, 0),
+(
+  'MadTree Brewing43.jpg', 1, 0),
+(
+  'MadTree Brewing44.jpg', 1, 0),
+(
+  'Nine Giant36.jpg', 3, 1),
+(
+  'Rhinegeist Brewery37.jpg', 4, 1),
+  (
+  'Fifty West Brewing Company6.jpg', 5, 1);
+
+
+  INSERT INTO operation VALUES
+(1,'Monday','1:00pm','2:30am'),
+(1,'Tuesday','1:00pm','2:30am'),
+(1,'Wednesday','1:00pm','2:30am'),
+(1,'Thursday','1:00pm','2:30am'),
+(1,'Friday','1:00pm','2:30am'),
+(1,'Saturday','1:00pm','2:30am'),
+(1,'Sunday','1:00pm','2:30am'),
+
+(2,'Monday','1:00pm','2:30am'),
+(2,'Tuesday','1:00pm','2:30am'),
+(2,'Wednesday','1:00pm','2:30am'),
+(2,'Thursday','1:00pm','2:30am'),
+(2,'Friday','1:00pm','2:30am'),
+(2,'Saturday','1:00pm','2:30am'),
+(2,'Sunday','1:00pm','2:30am'),
+
+(3,'Monday','1:00pm','2:30am'),
+(3,'Tuesday','1:00pm','2:30am'),
+(3,'Wednesday','1:00pm','2:30am'),
+(3,'Thursday','1:00pm','2:30am'),
+(3,'Friday','1:00pm','2:30am'),
+(3,'Saturday','1:00pm','2:30am'),
+(3,'Sunday','1:00pm','2:30am'),
+
+(4,'Monday','1:00pm','2:30am'),
+(4,'Tuesday','1:00pm','2:30am'),
+(4,'Wednesday','1:00pm','2:30am'),
+(4,'Thursday','1:00pm','2:30am'),
+(4,'Friday','1:00pm','2:30am'),
+(4,'Saturday','1:00pm','2:30am'),
+(4,'Sunday','1:00pm','2:30am'),
+
+(5,'Monday','1:00pm','2:30am'),
+(5,'Tuesday','1:00pm','2:30am'),
+(5,'Wednesday','1:00pm','2:30am'),
+(5,'Thursday','1:00pm','2:30am'),
+(5,'Friday','1:00pm','2:30am'),
+(5,'Saturday','1:00pm','2:30am'),
+(5,'Sunday','1:00pm','2:30am')
+
+        COMMIT;
+END TRY
+BEGIN CATCH
+    ROLLBACK;
+END CATCH;
+
+
+
+select * from breweries
+select * from users
+select * from beers
+select * from operation
+select * from beerPhotos
+select * from breweryPhotos
+select * from reviews
+
+--SET LOCK_TIMEOUT 100;  
+
+--SELECT @@LOCK_TIMEOUT AS [Lock Timeout];
+
+--insert into reviews values
+--(2,	3	,3,	'Good!					 '		,'2018-05-17 '   ),
+--(2,	1	,5,	'Outstanding				 '	,'2018-05-18 '   ),
+--(2,	2	,5,	'Outstanding				 '	,'2018-05-18 '   ),
+--(2,	2	,5,	'Outstanding				 '	,'2018-05-22 '   ),
+--(2,	11	,4,	'Outstanding				 '	,'2018-05-14 '   ),
+--(2,	11	,4,	'Pretty good brew		 '		,'2018-05-13 '   ),
+--(2,	11	,4,	'Outstanding				 '	,'2018-05-11 '   ),
+--(3,	11	,4,	'tasty					 '		,'2018-05-10 '   ),
+--(3,	11	,4,	'I would drink it again	 '		,'2018-05-09 '   ),
+--(3,	11	,4,	'Outstanding				 '	,'2018-05-08 '   ),
+--(3,	7	,4,	'Blam					 '		,'2018-05-06 '   ),
+--(4,	7	,4,	'OMG						 '	,'2018-05-05 '   ),
+--(4,	7	,4,	'Yuck					 '		,'2018-05-04 '   ),
+--(4,	7	,4,	'%$@# this beer!			 '	,'2018-05-03 '   ),
+--(4,	7	,4,	'It will get you drunk!	 '		,'2018-05-02 '   ),
+--(2,	17	,2,	'Outstanding				 '	,'2018-05-14 '   ),
+--(2,	17	,3,	'Pretty good brew		 '		,'2018-05-13 '   ),
+--(2,	17	,5,	'Outstanding				 '	,'2018-05-11 '   ),
+--(3,	17	,4,	'tasty					 '		,'2018-05-10 '   ),
+--(3,	13	,5,	'I would drink it again	 '		,'2018-05-09 '   ),
+--(3,	10	,2,	'Outstanding				 '	,'2018-05-08 '   ),
+--(3,	9	,3,	'Blam					 '		,'2018-05-06 '   ),
+--(4,	9	,2,	'OMG						 '	,'2018-05-05 '   ),
+--(4,	9	,1,	'Yuck					 '		,'2018-05-04 '   ),
+--(4,	9	,1,	'%$@# this beer!			 '	,'2018-05-03 '   ),
+--(4,	9	,1,	'It will get you drunk!	 '		,'2018-05-02 '   ),
+--(2,	13	,2,	'Outstanding				 '	,'2018-05-14 '   ),
+--(2,	17	,3,	'Pretty good brew		 '		,'2018-05-13 '   ),
+--(2,	13	,5,	'Outstanding				 '	,'2018-05-11 '   ),
+--(3,	13	,4,	'tasty					 '		,'2018-05-10 '   ),
+--(3,	15	,5,	'I would drink it again	 '		,'2018-05-09 '   ),
+--(3,	10	,2,	'Outstanding				 '	,'2018-05-08 '   ),
+--(3,	19	,3,	'Blam					 '		,'2018-05-06 '   ),
+--(4,	19	,2,	'OMG						 '	,'2018-05-05 '   ),
+--(4,	12	,1,	'Yuck					 '		,'2018-05-04 '   ),
+--(4,	19	,1,	'%$@# this beer!			 '	,'2018-05-03 '   ),
+--(4,	10	,1,	'It will get you drunk!	 '		,'2018-05-02 '   ),
+--(2,	3	,2,	'Outstanding				 '	,'2018-05-14 '   ),
+--(2,	7	,3,	'Pretty good brew		 '		,'2018-05-13 '   ),
+--(2,	3	,5,	'Outstanding				 '	,'2018-05-11 '   ),
+--(3,	3	,4,	'tasty					 '		,'2018-05-10 '   ),
+--(3,	5	,5,	'I would drink it again	 '		,'2018-05-09 '   ),
+--(3,	10	,2,	'Outstanding				 '	,'2018-05-08 '   ),
+--(3,	9	,3,	'Blam					 '		,'2018-05-06 '   ),
+--(4,	9	,2,	'OMG						 '	,'2018-05-05 '   ),
+--(4,	2	,1,	'Yuck					 '		,'2018-05-04 '   ),
+--(4,	9	,1,	'%$@# this beer!			 '	,'2018-05-03 '   ),
+--(4,	2	,1,	'It will get you drunk!	 '		,'2018-05-02 '   ),
+--(2,	3	,2,	'Good!					 '		,'2018-05-17 '   ),
+--(2,	1	,2,	'Outstanding				 '	,'2018-05-18 '   ),
+--(2,	2	,2,	'Outstanding				 '	,'2018-05-18 '   ),
+--(2,	2	,2,	'Outstanding				 '	,'2018-05-22 '   ),
+--(2,	11	,2,	'Outstanding				 '	,'2018-05-14 '   ),
+--(2,	11	,2,	'Pretty good brew		 '		,'2018-05-13 '   ),
+--(2,	11	,2,	'Outstanding				 '	,'2018-05-11 '   ),
+--(3,	11	,2,	'tasty					 '		,'2018-05-10 '   ),
+--(3,	11	,2,	'I would drink it again	 '		,'2018-05-09 '   ),
+--(3,	11	,2,	'Outstanding				 '	,'2018-05-08 '   ),
+--(3,	7	,2,	'Blam					 '		,'2018-05-06 '   ),
+--(4,	7	,2,	'OMG						 '	,'2018-05-05 '   ),
+--(4,	7	,4,	'Yuck					 '		,'2018-05-04 '   ),
+--(4,	7	,4,	'%$@# this beer!			 '	,'2018-05-03 '   ),
+--(4,	7	,4,	'It will get you drunk!	 '		,'2018-05-02 '   ),
+--(2,	17	,4,	'Outstanding				 '	,'2018-05-14 '   ),
+--(2,	17	,4,	'Pretty good brew		 '		,'2018-05-13 '   ),
+--(2,	17	,4,	'Outstanding				 '	,'2018-05-11 '   ),
+--(3,	17	,4,	'tasty					 '		,'2018-05-10 '   ),
+--(3,	13	,4,	'I would drink it again	 '		,'2018-05-09 '   ),
+--(3,	10	,4,	'Outstanding				 '	,'2018-05-08 '   ),
+--(3,	9	,4,	'Blam					 '		,'2018-05-06 '   ),
+--(4,	9	,4,	'OMG						 '	,'2018-05-05 '   ),
+--(4,	9	,1,	'Yuck					 '		,'2018-05-04 '   ),
+--(4,	9	,1,	'%$@# this beer!			 '	,'2018-05-03 '   ),
+--(4,	9	,3,	'It will get you drunk!	 '		,'2018-05-02 '   ),
+--(2,	13	,3,	'Outstanding				 '	,'2018-05-14 '   ),
+--(2,	17	,3,	'Pretty good brew		 '		,'2018-05-13 '   ),
+--(2,	13	,3,	'Outstanding				 '	,'2018-05-11 '   ),
+--(3,	13	,3,	'tasty					 '		,'2018-05-10 '   ),
+--(3,	15	,3,	'I would drink it again	 '		,'2018-05-09 '   ),
+--(3,	10	,3,	'Outstanding				 '	,'2018-05-08 '   ),
+--(3,	19	,3,	'Blam					 '		,'2018-05-06 '   ),
+--(4,	19	,3,	'OMG						 '	,'2018-05-05 '   ),
+--(4,	12	,3,	'Yuck					 '		,'2018-05-04 '   ),
+--(4,	19	,3,	'%$@# this beer!			 '	,'2018-05-03 '   ),
+--(4,	10	,3,	'It will get you drunk!	 '		,'2018-05-02 '   ),
+--(2,	3	,3,	'Outstanding				 '	,'2018-05-14 '   ),
+--(2,	7	,3,	'Pretty good brew		 '		,'2018-05-13 '   ),
+--(2,	3	,3,	'Outstanding				 '	,'2018-05-11 '   ),
+--(3,	3	,4,	'tasty					 '		,'2018-05-10 '   ),
+--(3,	5	,5,	'I would drink it again	 '		,'2018-05-09 '   ),
+--(3,	10	,5,	'Outstanding				 '	,'2018-05-08 '   ),
+--(3,	9	,5,	'Blam					 '		,'2018-05-06 '   ),
+--(4,	9	,5,	'OMG						 '	,'2018-05-05 '   ),
+--(4,	2	,5,	'Yuck					 '		,'2018-05-04 '   ),
+--(4,	9	,5,	'%$@# this beer!			 '	,'2018-05-03 '   ),
+--(4,	2	,5,	'It will get you drunk!	 '		,'2018-05-02 '   )
+
+

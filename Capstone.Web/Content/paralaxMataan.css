@@ -1,0 +1,22 @@
+﻿@media (max-width: 500px) {
+    .parallax-container {
+        height: 130px !important;
+    }
+    .smscreen {
+        position: relative !important;
+        width: 100% !important;
+        min-height: 1px !important;
+    }
+}
+@media (max-width: 500px) {
+
+
+    .smbtn {
+        width: 100% !important;
+        margin-left: 0px !important;
+    }
+    .marT {
+        margin-top: 15px !important;
+    }
+
+}
